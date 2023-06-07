@@ -48,5 +48,4 @@ async def main():
     average_rate = sum(exchange_rates) / len(exchange_rates)
     print(f"AVG Exchange Rate USD: {average_rate}")
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())
